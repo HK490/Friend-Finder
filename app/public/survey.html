@@ -19,7 +19,7 @@
 <body>
 
 
-    <div class="card border-light mb-3" style="max-width: 100vw;">
+    <div id="header" class="card border-light mb-3" style="max-width: 100vw;">
         <div class="card-header bg-transparent border-secondary ">
             <h1>Survey Questions</h1>
         </div>
@@ -38,7 +38,7 @@
                     </div>
             </p>
         </div>
-        <div class="card-body card-text">
+        <div id ="body" class="card-body card-text">
             <p class="card-text">
                 <h1>Question 1</h1>
                 <p>Ask question 1?</p>
@@ -125,7 +125,7 @@
                                 <p id="link"></p>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -178,11 +178,18 @@
                             parseInt($("#q4").val("")),
                             parseInt($("#q5").val(""))
                         $("#name").append(data.name)
-                        $("#link").append(data.link)
+                        // $("#link").append(data.link)
+                        $("#link").append('<img id="photo" src='+ data.link + '>')
                     });
 
 
             });
+      
+            $("#close").on("click", function() {
+                $("#name").empty();
+                $("#link").empty();
+            })
+      
         });
 
     </script>

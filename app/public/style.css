@@ -1,3 +1,17 @@
 .modal-content {
-    width: 900px !important;
+    max-width: 900px !important;
+}
+
+#photo {
+    max-width:700px;
+    height: auto;
+}
+
+#header,
+#homeBanner {
+    background: url(https://cdn.wallpapersafari.com/25/82/ab3zRo.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+    background-attachment: fixed;
+    /* background-position: right; */
 }
