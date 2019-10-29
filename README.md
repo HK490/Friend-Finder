@@ -1,9 +1,12 @@
 # Friend-Finder
-Friend-Finder
 
-Purpose: To find your best pal.
+### Link to Heroku:
+https://friend-finder-hk.herokuapp.com
 
-Instructions:
+### Purpose: 
+An app that allows users find their best pal by answering multiple choice questions. 
+
+### Instructions:
  1. From home page, click on "Go to Survey"
  2. Enter your name and photo link.
  3. Answer questions.
@@ -12,5 +15,5 @@ Instructions:
  4. Submit your answers.
 
 
-Link to Heroku:
-https://warm-scrubland-62444.herokuapp.com/
+### Technologies/Skills
+HTML, CSS, Bootstrap,  Express, Path, Node.js, App, JavaScript, JQuery, Heroku
